@@ -1,4 +1,5 @@
-import Navbar from './components/navegation/Navbar';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Index from './components/pages/Index';
 import Contact from './components/pages/Contact';
 import Phones from './components/pages/Phones';
@@ -11,11 +12,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Index/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/phones" element={<Phones/>} />
-        <Route path="/Services" element={<Services/>} />
+        <Route path="/" exact element={<Index />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/phones" element={<Phones />} />
+        <Route path="/Services" element={<Services />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

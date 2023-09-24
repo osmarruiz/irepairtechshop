@@ -10,7 +10,7 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav mx-auto">
+                    <div className="navbar-nav ">
                         <Link className="nav-link" to="/">Inicio</Link>
                         <Link className="nav-link" to="/phones">Celulares</Link>
                         <Link className="nav-link" to="/services">Servicios</Link>

@@ -1,9 +1,13 @@
-import React from "react";
-
+import React from 'react';
+import Hero from '../Hero';
+import Carousel from '../Carousel';
+import Ubication from '../Ubication';
 function Index() {
     return (
         <div>
-            <h1>pagina de inicio</h1>
+            <Hero/>
+            <Carousel/>
+            <Ubication/>
         </div>
     );
 }
