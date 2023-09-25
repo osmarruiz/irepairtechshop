@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/irepairtechshop/static/css/main.073c9b0a.css",
-    "main.js": "/irepairtechshop/static/js/main.75928f31.js",
+    "main.js": "/irepairtechshop/static/js/main.313d791a.js",
     "static/js/787.d3befce1.chunk.js": "/irepairtechshop/static/js/787.d3befce1.chunk.js",
+    "static/media/carousel4.jpg": "/irepairtechshop/static/media/carousel4.9675666577a3752bef58.jpg",
+    "static/media/carousel2.jpg": "/irepairtechshop/static/media/carousel2.fec061ab5bec473b863e.jpg",
+    "static/media/carousel3.jpg": "/irepairtechshop/static/media/carousel3.fe1c4ce1afae5733d08a.jpg",
+    "static/media/carousel1.jpg": "/irepairtechshop/static/media/carousel1.dec3b30d7f90db26b1b5.jpg",
+    "static/media/s22ultra.webp": "/irepairtechshop/static/media/s22ultra.20270acd705d63151a4d.webp",
     "index.html": "/irepairtechshop/index.html",
     "main.073c9b0a.css.map": "/irepairtechshop/static/css/main.073c9b0a.css.map",
-    "main.75928f31.js.map": "/irepairtechshop/static/js/main.75928f31.js.map",
+    "main.313d791a.js.map": "/irepairtechshop/static/js/main.313d791a.js.map",
     "787.d3befce1.chunk.js.map": "/irepairtechshop/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.75928f31.js"
+    "static/js/main.313d791a.js"
   ]
 }
