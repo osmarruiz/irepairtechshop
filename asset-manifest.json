@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/irepairtechshop/static/css/main.073c9b0a.css",
-    "main.js": "/irepairtechshop/static/js/main.d69a3483.js",
+    "main.js": "/irepairtechshop/static/js/main.75928f31.js",
     "static/js/787.d3befce1.chunk.js": "/irepairtechshop/static/js/787.d3befce1.chunk.js",
     "index.html": "/irepairtechshop/index.html",
     "main.073c9b0a.css.map": "/irepairtechshop/static/css/main.073c9b0a.css.map",
-    "main.d69a3483.js.map": "/irepairtechshop/static/js/main.d69a3483.js.map",
+    "main.75928f31.js.map": "/irepairtechshop/static/js/main.75928f31.js.map",
     "787.d3befce1.chunk.js.map": "/irepairtechshop/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d69a3483.js"
+    "static/js/main.75928f31.js"
   ]
 }
