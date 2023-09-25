@@ -1,5 +1,8 @@
 import React from "react";
-
+import carousel1 from '../img/carousel1.jpg';
+import carousel2 from '../img/carousel2.jpg';
+import carousel3 from '../img/carousel3.jpg';
+import carousel4 from '../img/carousel4.jpg';
 function Carousel() {
     return (
  
@@ -13,16 +16,16 @@ function Carousel() {
                 </div>
                 <div className="carousel-inner ">
                     <div className="carousel-item active " data-bs-interval="2000">
-                        <img src="/carousel1.jpg" className="d-block w-100" alt="..."  />
+                        <img src={carousel1} className="d-block w-100" alt="..."  />
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="/carousel2.jpg" className="d-block w-100 " alt="..." />
+                        <img src={carousel2} className="d-block w-100 " alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="/carousel3.jpg" className="d-block w-100" alt="..." />
+                        <img src={carousel3} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="/carousel4.jpg" className="d-block w-100" alt="..." />
+                        <img src={carousel4} className="d-block w-100" alt="..." />
                     </div>
                 </div>
             </div>
