@@ -1,20 +1,39 @@
 {
   "files": {
     "main.css": "/irepairtechshop/static/css/main.073c9b0a.css",
-    "main.js": "/irepairtechshop/static/js/main.313d791a.js",
+    "main.js": "/irepairtechshop/static/js/main.aa15008b.js",
     "static/js/787.d3befce1.chunk.js": "/irepairtechshop/static/js/787.d3befce1.chunk.js",
+    "static/media/reparacion.jpg": "/irepairtechshop/static/media/reparacion.c816652fd8a4a79ed849.jpg",
+    "static/media/note20.jpg": "/irepairtechshop/static/media/note20.98c21558ae12778df025.jpg",
     "static/media/carousel4.jpg": "/irepairtechshop/static/media/carousel4.9675666577a3752bef58.jpg",
     "static/media/carousel2.jpg": "/irepairtechshop/static/media/carousel2.fec061ab5bec473b863e.jpg",
     "static/media/carousel3.jpg": "/irepairtechshop/static/media/carousel3.fe1c4ce1afae5733d08a.jpg",
     "static/media/carousel1.jpg": "/irepairtechshop/static/media/carousel1.dec3b30d7f90db26b1b5.jpg",
+    "static/media/note11.png": "/irepairtechshop/static/media/note11.dac231714e27abc5e29c.png",
+    "static/media/s23ultra.jpg": "/irepairtechshop/static/media/s23ultra.4ae472d56458eef374a3.jpg",
+    "static/media/note12s.jpg": "/irepairtechshop/static/media/note12s.7a6021e7b8997cf2e6d3.jpg",
+    "static/media/downloadmode.jpg": "/irepairtechshop/static/media/downloadmode.cd959b26ddafd079873a.jpg",
     "static/media/s22ultra.webp": "/irepairtechshop/static/media/s22ultra.20270acd705d63151a4d.webp",
+    "static/media/samsung-logo.png": "/irepairtechshop/static/media/samsung-logo.a73291ec8ec679e87612.png",
+    "static/media/osmar.webp": "/irepairtechshop/static/media/osmar.2b12b88fc0d3c4c6f376.webp",
+    "static/media/aurelio.webp": "/irepairtechshop/static/media/aurelio.1779b10ef3a6e258c9fa.webp",
+    "static/media/a54.jpg": "/irepairtechshop/static/media/a54.be9a284ee1b2540e77c0.jpg",
+    "static/media/iPhone-logo.jpg": "/irepairtechshop/static/media/iPhone-logo.0942732b2a3919fe41ce.jpg",
+    "static/media/iphone15pro.jpg": "/irepairtechshop/static/media/iphone15pro.e46e983c26e826198905.jpg",
+    "static/media/iphone15promax.jpg": "/irepairtechshop/static/media/iphone15promax.3c5080fcc8c87faf6336.jpg",
+    "static/media/note11pro.jpg": "/irepairtechshop/static/media/note11pro.0f4451af2257821e9a10.jpg",
+    "static/media/note12pro.webp": "/irepairtechshop/static/media/note12pro.6a119f17b13222df5be1.webp",
+    "static/media/Xiaomi-Logo.png": "/irepairtechshop/static/media/Xiaomi-Logo.42c78501a81dea9b1c3c.png",
+    "static/media/iphone15.jpg": "/irepairtechshop/static/media/iphone15.45f20087d24953d6d7e9.jpg",
+    "static/media/s23.jpg": "/irepairtechshop/static/media/s23.3fc4bf9dd632cc08449c.jpg",
+    "static/media/iphone14.webp": "/irepairtechshop/static/media/iphone14.039ce05d647381ebd46c.webp",
     "index.html": "/irepairtechshop/index.html",
     "main.073c9b0a.css.map": "/irepairtechshop/static/css/main.073c9b0a.css.map",
-    "main.313d791a.js.map": "/irepairtechshop/static/js/main.313d791a.js.map",
+    "main.aa15008b.js.map": "/irepairtechshop/static/js/main.aa15008b.js.map",
     "787.d3befce1.chunk.js.map": "/irepairtechshop/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.313d791a.js"
+    "static/js/main.aa15008b.js"
   ]
 }
