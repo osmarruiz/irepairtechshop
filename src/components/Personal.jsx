@@ -9,6 +9,10 @@ const Personal = (props) => {
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.text}</p>
                     <p className="card-text"><b>{props.number}</b></p>
+                    <div className='contact'>
+                        <a href={props.whatsapp} className='btn btn-success btn-lg rounded-circle mx-2'><i className="fab fa-whatsapp"></i></a>
+                        <a href={props.telegram} className='btn btn-info text-light btn-lg rounded-circle mx-2'><i className="fab fa-telegram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

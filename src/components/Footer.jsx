@@ -21,7 +21,7 @@ function Footer() {
 
   <div className="text-center text-white p-3 bg-dark">
     © 2023 Copyright:
-    <Link className="text-white" to="/"> irepairtechshop.com</Link>
+    <Link className="text-white" to="/irepairtechshop/"> irepairtechshop.com</Link>
   </div>
 </footer>
 

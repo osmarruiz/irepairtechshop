@@ -4,7 +4,6 @@ import Index from './components/pages/Index';
 import Contact from './components/pages/Contact';
 import Phones from './components/pages/Phones';
 import Services from './components/pages/Services';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

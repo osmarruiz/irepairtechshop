@@ -16,9 +16,14 @@ import note12pro from '../../img/note12pro.webp';
 import note12s from '../../img/note12s.jpg';
 import note11pro from '../../img/note11pro.jpg';
 import note11 from '../../img/note11.png';
-function Phones() {
+
+
+async function Phones() {
+        const gsmarena = require('gsmarena-api');
+        const brands = await gsmarena.catalog.getBrands();
     return (
         <div className="container mt-5 mb-5">
+            <p>{brands}</p>
             <div className="row mb-3">
                 <h1 className="text-center">Marcas disponibles</h1>
                 <div className="col-sm-4 mb-3 mb-sm-0">
