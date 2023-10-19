@@ -2,9 +2,9 @@ import React from 'react';
 
 const CardPhone = (props) => {
     return (
-        <div className="card" style={{width: '18rem'}}>
-            <img src={props.img} className="card-img-top" alt="..." height={300}/>
-                <div className="card-body">
+        <div className="card m-auto" style={{width:"18rem", border:"none"}}  >
+            <img src={props.img} className="card-img " alt="..." style={{height:"300px"}} />
+                <div className="card-body"><keygen />
                     <h5 className="card-title">{props.title}</h5>
                 </div>
         </div>
