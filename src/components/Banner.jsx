@@ -20,7 +20,7 @@ const Banner = (props) => {
                     <div className="text-white">
                         <h1 className="mb-3">{props.text}</h1>
                         <h5 className='mb-3'>{props.secondary}</h5>
-                        <a className="btn btn-outline-light btn-lg" href="#" role="button">{props.textButton}</a>
+                        <a className="btn btn-outline-danger btn-lg" href="/irepairtechshop/contact" role="button">{props.textButton}</a>
                     </div>
                 </div>
             </div>

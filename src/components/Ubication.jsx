@@ -16,16 +16,16 @@ function Ubication() {
                     <div className="col-3">
                         <ul className="list-unstyled">
                             <li>
-                                <i className="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                <i className="fa fa-map-marker-alt fa-2x text-danger"></i>
                                 <p><small>Leon, Nicaragua</small></p>
                             </li>
                             <li>
-                                <i className="fas fa-phone fa-2x text-primary"></i>
-                                <p><small>+ 01 234 567 89</small></p>
+                                <i className="fa fa-phone fa-2x text-danger"></i>
+                                <p><small>+505 8222 8647</small></p>
                             </li>
                             <li>
-                                <i className="fas fa-envelope fa-2x text-primary"></i>
-                                <p><small>contact@gmail.com</small></p>
+                                <i className="fa fa-envelope fa-2x text-danger"></i>
+                                <p><small>osmarernesto17@gmail.com</small></p>
                             </li>
                         </ul>
                     </div>

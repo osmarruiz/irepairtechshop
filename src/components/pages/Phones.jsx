@@ -16,9 +16,8 @@ import note12pro from '../../img/note12pro.webp';
 import note12s from '../../img/note12s.jpg';
 import note11pro from '../../img/note11pro.jpg';
 import note11 from '../../img/note11.png';
-import dataPhone from '../../data/DataPhone';
 
-function Phones() {
+function Phones(props) {
     {/*dictionary of images*/ }
     const imgMap = {
         'iphone15': iphone15,
@@ -35,11 +34,11 @@ function Phones() {
         'note11': note11,
     };
 
-    let dataIphone = dataPhone.map(element => {
+    let dataIphone = props.elements.map(element => {
         if (element.Brand === "iPhone") {
             const imgSrc = imgMap[element.Img];
             return (
-                <div className="col col-xl-3 col-lg-6">
+                <div className="col col-xl-3 col-lg-6" key={element.Id}>
                     <CardPhone img={imgSrc} title={element.Model} />
                 </div>
             )
@@ -48,23 +47,24 @@ function Phones() {
 
     )
 
-    let dataSamsung = dataPhone.map(element => {
+    let dataSamsung = props.elements.map(element => {
         if (element.Brand === "Samsung") {
             const imgSrc = imgMap[element.Img];
             return (
-                <div className="col col-xl-3 col-lg-6">
+                <div className="col col-xl-3 col-lg-6" key={element.Id}>
                     <CardPhone img={imgSrc} title={element.Model} />
+                    
                 </div>
             )
         }
     }
     )
 
-    let dataXiaomi = dataPhone.map(element => {
+    let dataXiaomi = props.elements.map(element => {
         if (element.Brand === "Xiaomi") {
             const imgSrc = imgMap[element.Img];
             return (
-                <div className="col col-xl-3 col-lg-6">
+                <div className="col col-xl-3 col-lg-6" key={element.Id}>
                     <CardPhone img={imgSrc} title={element.Model} />
                 </div>
             )
@@ -113,8 +113,16 @@ function Phones() {
             </div>
             <br />
             <div className="row mb-3">
-                
                 {dataXiaomi}
+            </div>
+            <br />
+            <br />
+            <div className="bg-danger rounded text-light ">
+                <h1 className="pb-2">Favoritos</h1>
+            </div>
+            <br />
+            <div className="row mb-3">
+
             </div>
         </div>
     );
