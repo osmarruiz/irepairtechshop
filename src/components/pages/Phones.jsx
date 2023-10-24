@@ -16,13 +16,68 @@ import note12pro from '../../img/note12pro.webp';
 import note12s from '../../img/note12s.jpg';
 import note11pro from '../../img/note11pro.jpg';
 import note11 from '../../img/note11.png';
-
+import dataPhone from '../../data/DataPhone';
 
 function Phones() {
+    {/*dictionary of images*/ }
+    const imgMap = {
+        'iphone15': iphone15,
+        'iphone15pro': iphone15pro,
+        'iphone15promax': iphone15promax,
+        'iphone14': iphone14,
+        's23': s23,
+        's23ultra': s23ultra,
+        'note20': note20,
+        'a54': a54,
+        'note12pro': note12pro,
+        'note12s': note12s,
+        'note11pro': note11pro,
+        'note11': note11,
+    };
+
+    let dataIphone = dataPhone.map(element => {
+        if (element.Brand === "iPhone") {
+            const imgSrc = imgMap[element.Img];
+            return (
+                <div className="col col-xl-3 col-lg-6">
+                    <CardPhone img={imgSrc} title={element.Model} />
+                </div>
+            )
+        }
+    }
+
+    )
+
+    let dataSamsung = dataPhone.map(element => {
+        if (element.Brand === "Samsung") {
+            const imgSrc = imgMap[element.Img];
+            return (
+                <div className="col col-xl-3 col-lg-6">
+                    <CardPhone img={imgSrc} title={element.Model} />
+                </div>
+            )
+        }
+    }
+    )
+
+    let dataXiaomi = dataPhone.map(element => {
+        if (element.Brand === "Xiaomi") {
+            const imgSrc = imgMap[element.Img];
+            return (
+                <div className="col col-xl-3 col-lg-6">
+                    <CardPhone img={imgSrc} title={element.Model} />
+                </div>
+            )
+        }
+    }
+    )
+
     return (
         <div className="container mt-5 mb-5 text-center">
             <div className="row mb-3">
-                <h1>Marcas disponibles</h1>
+                <div className="bg-danger rounded text-light">
+                    <h1 className="">Marcas disponibles</h1>
+                </div>
                 <div className="col">
                     <img src={IphoneLogo} alt="" width="300px" />
                 </div>
@@ -33,59 +88,33 @@ function Phones() {
                     <img src={XiaomiLogo} alt="" width="300px" />
                 </div>
             </div>
-            <br/>
-            <h1 className="text-center">Modelos Disponibles en Iphone</h1>
             <br />
-            <hr />
+            <br />
+            <div className="bg-danger rounded text-light">
+                <h1 className=" pb-2">Modelos Disponibles en Iphone</h1>
+            </div>
+            <br />
+            <div className="row mb-3">
+                {dataIphone}
+            </div>
+            <br />
+            <br />
+            <div className="bg-danger rounded text-light ">
+                <h1 className="pb-2">Modelos Disponibles en Samsung</h1>
+            </div>
+            <br />
+            <div className="row mb-3 text-center">
+                {dataSamsung}
+            </div>
+            <br />
+            <br />
+            <div className="bg-danger rounded text-light ">
+                <h1 className="pb-2">Modelos Disponibles Xiaomi</h1>
+            </div>
+            <br />
             <div className="row mb-3">
                 
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={iphone15} title="Iphone 15"  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={iphone15pro} title="Iphone 15 Pro "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={iphone15promax} title="Iphone 15 Pro Max"  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={iphone14} title="Iphone 14 "  />
-                </div>
-            </div>
-            <div className="row mb-3 text-center">
-                <br />
-                <h1>Modelos Disponibles en Samsung</h1>
-                <br />
-                <hr />
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={s23} title="Samsung Galaxy S23 "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={s23ultra} title="Samsung Galaxy S23 Ultra "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={note20} title="Samsung Galaxy Note 20 "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={a54} title="Samsung Galaxy A54 "  />
-                </div>
-            </div>
-            <div className="row mb-3">
-                <h1>Modelos Disponibles en Xiaomi</h1>
-                <br />
-                <hr />
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={note12pro} title="Xiaomi Note 12 Pro"  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={note12s} title="Xiaomi Note 12s "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={note11pro}title="Xiaomi Note 11 Pro "  />
-                </div>
-                <div className="col col-xl-3 col-lg-6">
-                    <CardPhone img={note11} title="Xiaomi Note 11 "  />
-                </div>
+                {dataXiaomi}
             </div>
         </div>
     );
