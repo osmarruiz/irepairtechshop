@@ -71,6 +71,11 @@ function Phones(props) {
     }
     )
 
+   let dataFavorites = props.favorites.map(element =>
+    {
+        return <CardPhone img={element.img} title={element.title} addFavorites={props.addFavorites} />
+    })
+
     return (
         <div className="container mt-5 mb-5 text-center">
             <div className="row mb-3">
@@ -121,7 +126,7 @@ function Phones(props) {
             </div>
             <br />
             <div className="row mb-3">
-
+                {dataFavorites}
             </div>
         </div>
     );

@@ -10,19 +10,33 @@ import { useState } from 'react';
 
 function App() {
   const [ListPhone, SetDataPhone] = useState(DataPhone);
+  const [ListFavorites, SetDataFavorites] = useState([]);
+  function addToFavorite(element) {
+    let tempList = [...ListFavorites];
+    
+    let isAlreadyAdded = tempList.some((item) => item.title === element.title);
 
-  function addToFavorite(element){
-    console.log(element);
+    if (!isAlreadyAdded) {
+      tempList.push(element);
+      SetDataFavorites(tempList);
+    }
+    else{
+      console.log(element)
+      let i = tempList.indexOf(element);
+      tempList.splice(i,1);
+      console.log(tempList)
+      SetDataFavorites(tempList);
+    }
   }
 
-  
+
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/irepairtechshop/" exact element={<Index />} />
         <Route path="/irepairtechshop/contact" element={<Contact />} />
-        <Route path="/irepairtechshop/phones" element={<Phones elements={ListPhone} addFavorites={addToFavorite}/>} />
+        <Route path="/irepairtechshop/phones" element={<Phones elements={ListPhone} addFavorites={addToFavorite} favorites={ListFavorites} />} />
         <Route path="/irepairtechshop/Services" element={<Services />} />
       </Routes>
       <Footer />
