@@ -22,9 +22,9 @@ function App() {
     }
     else{
       console.log(element)
-      let i = tempList.indexOf(element);
+      let i = tempList.findIndex(obj => JSON.stringify(obj) === JSON.stringify(element));
+      console.log(i)
       tempList.splice(i,1);
-      console.log(tempList)
       SetDataFavorites(tempList);
     }
   }

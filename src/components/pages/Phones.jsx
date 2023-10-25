@@ -39,7 +39,7 @@ function Phones(props) {
             const imgSrc = imgMap[element.Img];
             return (
                 <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                    <CardPhone img={imgSrc} title={element.Model} addFavorites={props.addFavorites}/>
+                    <CardPhone img={imgSrc} title={element.Model} addFavorites={props.addFavorites} />
                 </div>
             )
         }
@@ -71,65 +71,68 @@ function Phones(props) {
     }
     )
 
-   let dataFavorites = props.favorites.map(element =>
-    {
-        return <CardPhone img={element.img} title={element.title} addFavorites={props.addFavorites} />
-    })
+    let dataFavorites = props.favorites.map(element => {
+        return (
+        <div className="col col-xl-3 col-lg-6" key={element.Id}> 
+                <CardPhone img={element.img} title={element.title} addFavorites={props.addFavorites} /> 
+        </div >
+        )
+})
 
-    return (
-        <div className="container mt-5 mb-5 text-center">
-            <div className="row mb-3">
-                <div className="bg-danger rounded text-light">
-                    <h1 className="">Marcas disponibles</h1>
-                </div>
-                <div className="col">
-                    <img src={IphoneLogo} alt="" width="300px" />
-                </div>
-                <div className="col">
-                    <img src={SamsungLogo} alt="" width="300px" />
-                </div>
-                <div className="col">
-                    <img src={XiaomiLogo} alt="" width="300px" />
-                </div>
-            </div>
-            <br />
-            <br />
+return (
+    <div className="container mt-5 mb-5 text-center">
+        <div className="row mb-3">
             <div className="bg-danger rounded text-light">
-                <h1 className=" pb-2">Modelos Disponibles en Iphone</h1>
+                <h1 className="">Marcas disponibles</h1>
             </div>
-            <br />
-            <div className="row mb-3">
-                {dataIphone}
+            <div className="col">
+                <img src={IphoneLogo} alt="" width="300px" />
             </div>
-            <br />
-            <br />
-            <div className="bg-danger rounded text-light ">
-                <h1 className="pb-2">Modelos Disponibles en Samsung</h1>
+            <div className="col">
+                <img src={SamsungLogo} alt="" width="300px" />
             </div>
-            <br />
-            <div className="row mb-3 text-center">
-                {dataSamsung}
-            </div>
-            <br />
-            <br />
-            <div className="bg-danger rounded text-light ">
-                <h1 className="pb-2">Modelos Disponibles Xiaomi</h1>
-            </div>
-            <br />
-            <div className="row mb-3">
-                {dataXiaomi}
-            </div>
-            <br />
-            <br />
-            <div className="bg-danger rounded text-light ">
-                <h1 className="pb-2">Favoritos</h1>
-            </div>
-            <br />
-            <div className="row mb-3">
-                {dataFavorites}
+            <div className="col">
+                <img src={XiaomiLogo} alt="" width="300px" />
             </div>
         </div>
-    );
+        <br />
+        <br />
+        <div className="bg-danger rounded text-light">
+            <h1 className=" pb-2">Modelos Disponibles en Iphone</h1>
+        </div>
+        <br />
+        <div className="row mb-3">
+            {dataIphone}
+        </div>
+        <br />
+        <br />
+        <div className="bg-danger rounded text-light ">
+            <h1 className="pb-2">Modelos Disponibles en Samsung</h1>
+        </div>
+        <br />
+        <div className="row mb-3 text-center">
+            {dataSamsung}
+        </div>
+        <br />
+        <br />
+        <div className="bg-danger rounded text-light ">
+            <h1 className="pb-2">Modelos Disponibles Xiaomi</h1>
+        </div>
+        <br />
+        <div className="row mb-3">
+            {dataXiaomi}
+        </div>
+        <br />
+        <br />
+        <div className="bg-danger rounded text-light ">
+            <h1 className="pb-2">Favoritos</h1>
+        </div>
+        <br />
+        <div className="row mb-3">
+            {dataFavorites}
+        </div>
+    </div>
+);
 }
 
 export default Phones;
