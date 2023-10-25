@@ -39,7 +39,7 @@ function Phones(props) {
             const imgSrc = imgMap[element.Img];
             return (
                 <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                    <CardPhone img={imgSrc} title={element.Model} />
+                    <CardPhone img={imgSrc} title={element.Model} addFavorites={props.addFavorites}/>
                 </div>
             )
         }
@@ -52,8 +52,7 @@ function Phones(props) {
             const imgSrc = imgMap[element.Img];
             return (
                 <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                    <CardPhone img={imgSrc} title={element.Model} />
-                    
+                    <CardPhone img={imgSrc} title={element.Model} addFavorites={props.addFavorites} />
                 </div>
             )
         }
@@ -65,7 +64,7 @@ function Phones(props) {
             const imgSrc = imgMap[element.Img];
             return (
                 <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                    <CardPhone img={imgSrc} title={element.Model} />
+                    <CardPhone img={imgSrc} title={element.Model} addFavorites={props.addFavorites} />
                 </div>
             )
         }

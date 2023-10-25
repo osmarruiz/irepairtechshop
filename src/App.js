@@ -10,13 +10,19 @@ import { useState } from 'react';
 
 function App() {
   const [ListPhone, SetDataPhone] = useState(DataPhone);
+
+  function addToFavorite(element){
+    console.log(element);
+  }
+
+  
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/irepairtechshop/" exact element={<Index />} />
         <Route path="/irepairtechshop/contact" element={<Contact />} />
-        <Route path="/irepairtechshop/phones" element={<Phones elements={ListPhone}/>} />
+        <Route path="/irepairtechshop/phones" element={<Phones elements={ListPhone} addFavorites={addToFavorite}/>} />
         <Route path="/irepairtechshop/Services" element={<Services />} />
       </Routes>
       <Footer />
