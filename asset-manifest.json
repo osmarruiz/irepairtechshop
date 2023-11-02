@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/irepairtechshop/static/js/main.1bdcf511.js",
+    "main.js": "/irepairtechshop/static/js/main.74c0bb13.js",
     "static/js/787.d3befce1.chunk.js": "/irepairtechshop/static/js/787.d3befce1.chunk.js",
-    "static/media/reparacion.jpg": "/irepairtechshop/static/media/reparacion.c816652fd8a4a79ed849.jpg",
+    "static/media/Reparacion.jpeg": "/irepairtechshop/static/media/Reparacion.bd01244a68fc58146e77.jpeg",
     "static/media/note20.jpg": "/irepairtechshop/static/media/note20.98c21558ae12778df025.jpg",
     "static/media/carousel4.jpg": "/irepairtechshop/static/media/carousel4.9675666577a3752bef58.jpg",
     "static/media/carousel2.jpg": "/irepairtechshop/static/media/carousel2.fec061ab5bec473b863e.jpg",
@@ -27,10 +27,10 @@
     "static/media/s23.jpg": "/irepairtechshop/static/media/s23.3fc4bf9dd632cc08449c.jpg",
     "static/media/iphone14.webp": "/irepairtechshop/static/media/iphone14.039ce05d647381ebd46c.webp",
     "index.html": "/irepairtechshop/index.html",
-    "main.1bdcf511.js.map": "/irepairtechshop/static/js/main.1bdcf511.js.map",
+    "main.74c0bb13.js.map": "/irepairtechshop/static/js/main.74c0bb13.js.map",
     "787.d3befce1.chunk.js.map": "/irepairtechshop/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.1bdcf511.js"
+    "static/js/main.74c0bb13.js"
   ]
 }
