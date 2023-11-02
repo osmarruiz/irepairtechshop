@@ -1,7 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  //componente footer, retorna un footer con las redes sociales de la tienda
+  
   return (
 <footer className="text-center text-lg-start bg-dark">
   <div className="container d-flex justify-content-center py-5">

@@ -1,10 +1,10 @@
-import React from 'react';
 
-const Personal = (props) => {
+function Personal(props) {
+    //componente personal, retorna cartas con los datos pasados por props
     return (
         <div className="d-flex justify-content-center">
-            <div className="card text-center bg-danger text-light" style={{ width: '80%', border:'none' }}>
-                <img src={props.img} className="card-img-top m-auto mt-3 rounded" alt="..." style={{width:'92%'}} height={350} />
+            <div className="card text-center bg-danger text-light" style={{ width: '80%', border: 'none' }}>
+                <img src={props.img} className="card-img-top m-auto mt-3 rounded" alt="..." style={{ width: '92%' }} height={350} />
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.text}</p>

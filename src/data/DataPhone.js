@@ -4,7 +4,7 @@ let DataPhone =
     "Id": 1,
     "Brand": "iPhone",
     "Model": "14",
-    "Price": 700.00,
+    "Price": 700.61,
     "Info": "El último iPhone con innovadoras características de cámara, rendimiento excepcional y pantalla de alta resolución.",
     "OS": "iOS",
     "Img": "iphone14"
