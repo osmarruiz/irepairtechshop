@@ -4,7 +4,7 @@ function Banner(props) {
     return (
         <div className="p-5 text-center bg-image rounded-3" style={{
             backgroundImage: `url(${props.img})`,
-            height: "700px",
+            height: "900px",
             position: "relative",
         }}>
             <div className="mask"
@@ -20,6 +20,7 @@ function Banner(props) {
                     <div className="text-white">
                         <h1 className="mb-3">{props.text}</h1>
                         <h5 className='mb-3'>{props.secondary}</h5>
+                        <br />
                         <a className="btn btn-outline-danger btn-lg" href="/irepairtechshop/contact" role="button">{props.textButton}</a>
                     </div>
                 </div>

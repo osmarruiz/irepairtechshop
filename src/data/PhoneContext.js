@@ -41,43 +41,48 @@ function PhoneContextProvider({ children }) {
 
   
 
-    function addToFavorite(element) {
+    function addToFavorite(phone) {
         let tempList = [...ListFavorites];
-        let isAlreadyAdded = ListFavorites.some((item) => item.title === element.title);
+        let isAlreadyAdded = ListFavorites.some((item) => item.model === phone.model);
     
         if (!isAlreadyAdded) {
-          tempList.push(element);
+          tempList.push(phone);
           setDataFavorites(tempList);
         }
         else {
-          let i = tempList.findIndex(obj => JSON.stringify(obj) === JSON.stringify(element));
+          let i = tempList.findIndex(obj => JSON.stringify(obj) === JSON.stringify(phone));
           tempList.splice(i, 1);
           setDataFavorites(tempList);
         }
       }
 
     //Recupera todos los datos de los telefonos y los emplea en cardPhone 
-    let dataPhone = ListPhone.map(element => {
-        const imgSrc = imgMap[element.Img];
+    let dataPhone = ListPhone.map(phone => {
+        const imgSrc = imgMap[phone.img];
         return (
-            <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                <CardPhone img={imgSrc} title={element.Model} price={element.Price} addFavorites={addToFavorite} />
+            <div className="col col-xl-3 col-lg-6" key={phone.id}>
+                <CardPhone id={phone.id} img={imgSrc} model={phone.model} price={phone.price} addFavorites={addToFavorite} />
             </div>
         );
     }
     )
-
+    function filterPhoneById(id){
+        let phone = DataPhone.filter(phone => phone.id === parseInt(id));
+        return (
+            phone[0]
+        )
+    }
     //filtra por marca de telefono y renderiza
     const [filteredData, setFilteredData] = useState([]);
 
     function filterPhone(brand) {
-        const filteredPhones = brand === "" ? [] : DataPhone.filter(phone => phone.Brand === brand);
+        const filteredPhones = brand === "" ? [] : DataPhone.filter(phone => phone.brand === brand);
         setFilteredData(filteredPhones);
     }
 
     const dataFilter = filteredData.map(phone => (
-        <div className="col col-xl-3 col-lg-6" key={phone.Id}>
-            <CardPhone img={imgMap[phone.Img]} title={phone.Model} price={phone.Price} addFavorites={addToFavorite} />
+        <div className="col col-xl-3 col-lg-6" key={phone.id}>
+            <CardPhone id={phone.id} img={imgMap[phone.Img]} model={phone.model} price={phone.price} addFavorites={addToFavorite} />
         </div>
     ));
 
@@ -100,9 +105,9 @@ function PhoneContextProvider({ children }) {
             </div>
             <br />
             <div className="row mb-3">
-                {ListFavorites.map((element) => (
-                    <div className="col col-xl-3 col-lg-6" key={element.Id}>
-                        <CardPhone img={element.img} title={element.title} price={element.price} addFavorites={addToFavorite} />
+                {ListFavorites.map((phone) => (
+                    <div className="col col-xl-3 col-lg-6" key={phone.id}>
+                        <CardPhone id={phone.id} img={phone.img} model={phone.model} price={phone.price} addFavorites={addToFavorite} />
                     </div>
                 ))}
             </div>
@@ -118,8 +123,8 @@ function PhoneContextProvider({ children }) {
     }
     
     const filterSearch = (search) => {
-        const result = ListPhone.filter((element) => {
-            const brandAndModel = element.Brand.toString().toLowerCase() + " " + element.Model.toString().toLowerCase();
+        const result = ListPhone.filter((phone) => {
+            const brandAndModel = phone.brand.toString().toLowerCase() + " " + phone.model.toString().toLowerCase();
             return brandAndModel.includes(search.toLowerCase());
         });
         setFilteredData(result);
@@ -135,6 +140,8 @@ function PhoneContextProvider({ children }) {
                 filterPhone,
                 search,
                 HandlerSearch,
+                filterPhoneById,
+                imgMap
 
 
             }
